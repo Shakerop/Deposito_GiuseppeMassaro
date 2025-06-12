@@ -11,9 +11,11 @@ int main(){
     printf("Ciao, inserisci il terzo numero intero \n");
     scanf("%d", &num_3);
 
+    // ---------------------------------- //
     printf("Ciao, inserisci la soglia \n");
     scanf("%d", &soglia);
 
+    // ---------------------------------- //
     int somma = num_1 + num_2;
     int prod = num_2 * num_3;
 
@@ -27,6 +29,12 @@ int main(){
         printf("Il prodotto è stato calcolato correttamente, il valore è %d\n", prod);
     } else {
         printf("Le due cifre inserite sono troppo piccole per l'operatore moltiplicazione, riprova!! \n");
-    }  
+    }
+
+    if (num_1 < 0 || num_2 < 0 || num_3 > 0){
+        printf("Qualche numero tra quelli inseriti è negativo \n");
+    } else {
+        printf("I numeri inseriti sono positivi, grande!! \n");
+    }
     return 0;
 }
